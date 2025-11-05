@@ -214,12 +214,21 @@ If you prefer a different search solution:
 
 ```bash
 # Development
-npm run dev          # Start dev server
+npm run dev          # Start development server with hot reload
 
 # Production
 npm run build        # Build static site (output to out/)
-npm run start        # Preview production build locally
+npm run preview      # Preview the static build locally (requires build first)
+
+# Note: npm run start is for Next.js server mode, not static export
 ```
+
+**To preview your static site:**
+1. Run `npm run build` to generate the static files
+2. Run `npm run preview` to serve them locally
+3. Open `http://localhost:3000` in your browser
+
+⚠️ **Important**: Don't open the HTML files directly in your browser. Always use a local server to preview the site.
 
 ## Learn More
 
